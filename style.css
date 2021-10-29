@@ -16,6 +16,7 @@ textarea{
 span,i{
   font-size: 25px;
 }
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -59,7 +60,10 @@ span,i{
   background-color: #77dd77;
   color: white;
 }
-
+.yesterday{
+  background-color: #000000;
+  color: #ffffff;
+}
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;

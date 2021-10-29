@@ -4,12 +4,14 @@ var date = moment().format("dddd, MMMM Do, YYYY - hh:mm:ss a");
 $("#currentDay").text(date);
 var scheduledItem = [];
 var timeBlock = $(".hour");
+
 var currentHour = parseInt(moment().format("H"));
 
 $(".saveBtn").on("click", function(){
     var textAreaVal = $(this).siblings(".description").val();
     console.log(textAreaVal);
     var textAreaId = $(this).siblings(".description").attr("id");
+    
     console.log(textAreaId);
     scheduledItem.push(textAreaVal);
     localStorage.setItem(textAreaId, textAreaVal);
@@ -37,8 +39,10 @@ $("#fivePm").val(localStorage.getItem("fivePm"));
 
 $.each(timeBlock, function(i, hour){
     var hourId = parseInt($(this).attr("id"));
+    
     if(hourId < currentHour){
         $(this).next().addClass("past");
+
     }
     else if(hourId === currentHour){
         $(this).next().addClass("present");
