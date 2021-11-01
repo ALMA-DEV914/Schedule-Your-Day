@@ -36,7 +36,7 @@ function loadScheduleditem(){
 }
 //functions to get the inputted text/scheduled for each attribute ids
 $("#nineAm").val(localStorage.getItem("nineAm"));
-$("#tenAm").val(localStorage.getItem("tenam"));
+$("#tenAm").val(localStorage.getItem("tenAm"));
 $("#elevenAm").val(localStorage.getItem("elevenAm"));
 $("#twelvePm").val(localStorage.getItem("twelvePm"));
 $("#onePm").val(localStorage.getItem("onePm"));
